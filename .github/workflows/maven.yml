@@ -30,7 +30,7 @@ jobs:
         run: javac src/Main.java
       
       - name: Executar
-        run: java src/Main.java
+        run: java src/main/java/org/springframework/samples/petlinc/PetClinicApplication.java
   deploy:
 
     runs-on: ubuntu-latest
