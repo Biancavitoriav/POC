@@ -41,7 +41,7 @@ jobs:
       run: |
            echo "${{secrets.KEY_F}}" >private_key && chmod 400 private_key
            ssh -o StrictHostKeyChecking=no -i "private_key" ubuntu@ec2-35-172-80-252.compute-1.amazonaws.com "
-                     cd /POC/spring-petclinic-main &&
+                     cd POC/spring-petclinic-main &&
                      git pull &&
                      mvn clean package -DskipTests &&
                      ./executar.sh "
