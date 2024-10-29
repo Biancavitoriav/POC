@@ -27,7 +27,7 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
       - name: Compilando
-        run: javac src/Main.java
+        run: java src/main/java/org/springframework/samples/petlinc/PetClinicApplication.java
       
       - name: Executar
         run: java src/main/java/org/springframework/samples/petlinc/PetClinicApplication.java
