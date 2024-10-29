@@ -42,7 +42,7 @@ jobs:
 
       - name: Conectando no Roberto
         run: |
-            echo "${{secrets.KEY_G}}" > private_key && chmod 600 private_key
-            ssh -o StrictHostKeyChecking=no -i private_key ubuntu@ec2-54-159-87-30.compute-1.amazonaws.com   "
+            echo "${{secrets.KEY_F}}" > private_key && chmod 600 private_key
+            ssh -o StrictHostKeyChecking=no -i private_key ubuntu@ec2-35-172-80-252.compute-1.amazonaws.com   "
                cd /var/www/html/web_flare  &&
                sudo git pull "
